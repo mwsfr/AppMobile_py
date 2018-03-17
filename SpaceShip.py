@@ -1,13 +1,4 @@
 class SpaceShip:
-	# name = ''
-	# fuel = ''
-	# hull = ''
-	# power = ''
-	# robots = ''
-	# missiles = ''
-	# battleMode = False
-	# scanner = ''
-	# enemy = ''
 	# public ArrayList <SpaceShipRoom> roomList = new ArrayList<SpaceShipRoom>()
 	# public ArrayList <Person> crew = new ArrayList<Person>()
 
