@@ -11,4 +11,13 @@ class SpaceShip:
 		self.missiles=missiles
 		self.battleMode=battleMode
 		self.scanner=scanner
-		self.enemy=enemy	
+		self.enemy=enemy
+	
+	def showOptions(self):
+		option=99
+		while (option > 0):
+			print('''
+ Main Menu: 
+   1 - Systems
+   2 - Crew''')
+			option = int(input('>'))
