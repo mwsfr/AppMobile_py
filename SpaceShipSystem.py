@@ -56,9 +56,9 @@ class SpaceShipSystem:
 			print(self.name+''' Menu:
   1 - Stop system''')
 			if self.attackSystem:
-				print('''2 - Select target
+				print('''  2 - Select target
   3 - Fire''')
-		option=int(input('> '))
+			option=int(input('> '))
 		
 		
 	def showOptions(self):
