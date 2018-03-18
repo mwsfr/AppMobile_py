@@ -1,5 +1,5 @@
 class SpaceShipSystem:
-	__init__(self,powerRequired='',missilesRequired='',robotsRequired='',timeRequired='',counter='',power='',item='',health='',name='unknown',status='stopped',load='',ship='',robot='',missiles='',target='',attackSystem='',atackPower='',defensePower=''):
+	def __init__(self,powerRequired=0,missilesRequired=0,robotsRequired=0,timeRequired=0,counter=0,power=0,item=0,health=0,name='unknown',status='stopped',load=False,robot=0,missiles=0,target=None,attackSystem=False,atackPower=0,defensePower=0):
 		self.powerRequired=powerRequired
 		self.missilesRequired=missilesRequired
 		self.robotsRequired=robotsRequired
@@ -11,7 +11,6 @@ class SpaceShipSystem:
 		self.name=name
 		self.status=status
 		self.load=load
-		self.ship=ship
 		self.robot=robot
 		self.missiles=missiles
 		self.target=target
@@ -24,21 +23,21 @@ class SpaceShipSystem:
 		if self.health<100:
 			r=False
 			print(self.name+' is damaged!')
-		elif self.ship.power < self.powerRequired:
-			r=False
-			print('Insuficient power!')
-		elif self.ship.robot < self.robotRequired:
-			r=False
-			print('Insuficient robots!')
-		elif self.ship.missiles < self.missilesRequired:
-			r=False
-			print('Insuficient missiles!')
+		#elif self.ship.power < self.powerRequired:
+		#	r=False
+		#	print('Insuficient power!')
+		#elif self.ship.robot < self.robotRequired:
+		#	r=False
+		#	print('Insuficient robots!')
+		#elif self.ship.missiles < self.missilesRequired:
+		#	r=False
+		#	print('Insuficient missiles!')
 		return r
 			
 	def start(self):
-		self.start='started'
+		self.status='started'
 		self.power=self.powerRequired
-		self.ship.power=self.ship.power - self.powerRequired
+		#self.ship.power=self.ship.power - self.powerRequired
 		print(self.name+' started')
 	
 	def initialOptions(self):

@@ -1,7 +1,7 @@
 class SpaceShip:
 	# public ArrayList <Person> crew = new ArrayList<Person>()
 
-	def __init__(self,name='unknown',fuel='',hull='',power='',robots='',missiles='',battleMode=False,scanner='',enemy='',roomList=[],crew=[]):
+	def __init__(self,name='unknown',fuel=0,hull=0,power=0,robots=0,missiles=0,battleMode=False,enemy=None,room=[],crew=[]):
 		self.name = name
 		self.fuel=fuel
 		self.hull=hull
@@ -9,9 +9,8 @@ class SpaceShip:
 		self.robots=robots
 		self.missiles=missiles
 		self.battleMode=battleMode
-		self.scanner=scanner
 		self.enemy=enemy
-		self.roomList=roomList
+		self.room=room
 		self.crew=crew
 	
 	def showOptions(self):
