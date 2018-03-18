@@ -10,3 +10,4 @@ ss2 = SpaceShipSystem(powerRequired=10,missilesRequired=1,robotsRequired=0,timeR
 sr = SpaceShipRoom('Room A',ss)
 sr2 = SpaceShipRoom('Room B',ss2)
 s = SpaceShip('Falcon',10,20,30,40,50,False,None,room=[sr,sr2],crew=[])
+s.info()

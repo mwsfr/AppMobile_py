@@ -8,11 +8,13 @@ class SpaceShipRoom:
 	def info(self):
 		if self.system == None:
 			local_system=None
+			local_system_info=''
 		else:
 			local_system=self.system.name
-		print('----------------------------')
-		print(str(self.name)+''':
-  |- system: '''+ local_system +'''
-  |- oxygen: '''+ str(self.oxygenLevel) +'''%
-  |- status: '''+ str(self.status) +'''%
-----------------------------''')
+			local_system_info=self.system.info()
+		r='''
+  |- room: '''+str(self.name)+'''
+       |- oxygen: '''+ str(self.oxygenLevel) +'''%
+       |- status: '''+ str(self.status) +'''%
+       |- system: '''+ str(local_system) + str(local_system_info)
+		return r

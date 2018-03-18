@@ -66,3 +66,20 @@ class SpaceShipSystem:
 			self.initialOptions()
 		else:
 			self.readyOption()
+	
+	def info(self):
+		r='''
+           |- health: '''+str(self.health)+'''
+           |- status: '''+str(self.status)+'''
+           |- power: '''+str(self.power)+'''
+           |- robot: '''+str(self.robot)+'''
+           |- missiles: '''+str(self.missiles)+'''
+           |- atackPower: '''+str(self.atackPower)+'''
+           |- defensePower: '''+str(self.defensePower)+'''
+           |- timeRequired: '''+str(self.timeRequired)+'''
+           |- powerRequired: '''+str(self.powerRequired)+'''
+           |- missilesRequired: '''+str(self.missilesRequired)+'''
+           |- robotsRequired: '''+str(self.robotsRequired)+'''
+           |- load: '''+str(self.load)+'''
+           |- target: '''+str(self.target)
+		return r

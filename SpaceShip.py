@@ -21,3 +21,18 @@ class SpaceShip:
    1 - Systems
    2 - Crew''')
 			option = int(input('>'))
+			
+	def info(self):
+		rooms=''
+		for i in self.room:
+			rooms= rooms + i.info()
+		r=str(self.name)+'''
+  |- fuel: '''+str(self.fuel)+'''
+  |- hull: '''+str(self.hull)+'''
+  |- power: '''+str(self.power)+'''
+  |- robots: '''+str(self.robots)+'''
+  |- missiles: '''+str(self.missiles)+'''
+  |- battleMode: '''+str(self.battleMode)+'''
+  |- enemy: '''+str(self.enemy)+'''
+  |- crew: '''+str(self.crew)+''''''+str(rooms)
+		print(r)
